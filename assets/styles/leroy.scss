@@ -265,7 +265,6 @@ img {
     border: none;
     padding: 0 15px;
     font-size: 13px;
-    font-style: italic;
     border: none;
     vertical-align: top; }
   .search-line button {
@@ -464,8 +463,6 @@ img {
     .accordion-menu > li a, .accordion-menu > li span {
       padding: 10px 15px;
       cursor: pointer; }
-    .accordion-menu > li > a, .accordion-menu > li > span {
-      text-transform: uppercase; }
     .accordion-menu > li.total-purchase {
       background: #cccccc;
       font-weight: bold; }
@@ -730,7 +727,7 @@ img {
   vertical-align: middle;
   text-align: center;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   -webkit-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out;
@@ -1227,7 +1224,7 @@ img {
     font-weight: normal;
     border: solid 1px #cccccc; }
   .catalog-menu > li > a, .catalog-menu > li > span {
-    padding-left: 47px;
+    padding-left: 49px;
     padding-right: 80px; }
     .catalog-menu > li > a .menu-number, .catalog-menu > li > span .menu-number {
       right: 43px; }
@@ -1237,7 +1234,7 @@ img {
   padding-right: 40px; }
 
 .catalog-menu img {
-  max-width: 40px;
+  max-width: 36px;
   max-height: 100%;
   position: absolute;
   left: 5px;
