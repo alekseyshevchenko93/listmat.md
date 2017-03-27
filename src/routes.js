@@ -10,18 +10,18 @@ const routes = [
     template: require('./templates/main.html')
   },
   {
-    name: 'app.categories',
-    url: '/categories',
-    template: require('./templates/categories.html')
+    name: 'app.catalog',
+    url: '/catalog',
+    template: require('./templates/catalog.html')
   },
   {
     name: 'app.productsList',
-    url: '/categories/{category}/products',
+    url: '/catalog/{category}/products',
     template: require('./templates/products-list.html')
   },
   {
     name: 'app.product',
-    url: '/categories/{category}/products/{product}',
+    url: '/catalog/{category}/products/{product}',
     template: require('./templates/product.html')
   },
   {
