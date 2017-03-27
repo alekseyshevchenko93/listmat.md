@@ -11,6 +11,15 @@ const app = angular.module('app', [
   // angularOwlCarousel
 ]);
 
+app.run(['$templateCache', function($templateCache) {
+  let context = require.context('./', true, /\.(html)$/);
+
+  context.keys().forEach(filename => {
+    $templateCache.put(filename.replace('./', ''), context(filename));
+  });
+
+}]);
+
 import routes from './routes';
 
 app.config(routes);
