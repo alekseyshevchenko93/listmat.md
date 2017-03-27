@@ -160,7 +160,7 @@ img {
 ******************************************/
 .header-line {
   background: white;
-  padding: 6px 0;
+  padding: 6px 0 0 0;
   text-align: justify;
   line-height: 0; }
   .header-line .container:after {
@@ -176,7 +176,7 @@ img {
   position: relative;
   line-height: 1; }
   .header-item.logo img {
-    width: 57px; }
+    width: 50px; }
   .header-item:before {
     content: '';
     display: block;

@@ -75,8 +75,8 @@ var config = {
 
   devServer: {
     contentBase: './public',
-    hot: true
-    // historyApiFallback: true
+    hot: true,
+    historyApiFallback: true
   }
 
 }
