@@ -514,7 +514,7 @@ img {
       position: relative;
       border: none; }
       .accordion-menu > li li a, .accordion-menu > li li span {
-        padding: 10px 40px 10px 15px;
+        padding: 10px 40px 10px 50px;
         cursor: pointer; }
       .accordion-menu > li li span .open-close {
         width: 10px;
@@ -591,7 +591,7 @@ img {
 Хлебные крошки
 ******************************************/
 .breadcrumb {
-  margin: 10px 0;
+  margin: 20px 0;
   line-height: 1.4; }
   .breadcrumb ul {
     list-style: none; }
@@ -910,7 +910,7 @@ img {
   margin-bottom: 0.25em;
   margin-left: 10px; }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -1003,7 +1003,7 @@ img {
   display: block; }
 
 /*
-*   Owl Carousel Owl Demo Theme 
+*   Owl Carousel Owl Demo Theme
 * v1.3.3
 */
 /* Styling Pagination*/
@@ -2196,7 +2196,7 @@ _:-ms-fullscreen, :root .tiled {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -0.25em; 
+    margin-right: -0.25em;
   }*/ }
   .pfl-label span {
     display: inline-block;
@@ -5962,15 +5962,15 @@ a[data-big="true"] {
 /**
  * Swiper 3.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
- * 
+ *
  * http://www.idangero.us/swiper/
- * 
+ *
  * Copyright 2016, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
- * 
+ *
  * Licensed under MIT
- * 
+ *
  * Released on: December 13, 2016
  */
 .swiper-container {
@@ -6434,22 +6434,22 @@ footer {
 }
 
 .subscribe-small-wrapper .subscribe-small-title
-{ 
+{
     margin: 0 0 10px;
   font-size: 15px;
     font-weight: bold;
 }
 
 .subscribe-small-wrapper .subscribeSmall-form input[name="email"]
-{ 
+{
   height: 41px;
     background: #fff;
 }
 
 .subscribe-small-wrapper .subscribeSmall-form button[type="submit"]
 {
-  margin-top: 10px; 
-  /*  
+  margin-top: 10px;
+  /*
   height: 28px;
   line-height: 30px;
   */
@@ -6471,7 +6471,7 @@ footer {
 }
 
 .mobapp-links-wrapper .mobapp-links-title
-{ 
+{
     margin: 15px 0 10px;
   font-size: 15px;
     font-weight: bold;
