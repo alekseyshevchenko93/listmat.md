@@ -15,7 +15,7 @@ const routes = [
     template: require('./templates/categories.html')
   },
   {
-    name: 'app.products-list',
+    name: 'app.productsList',
     url: '/categories/{category}/products',
     template: require('./templates/products-list.html')
   },
