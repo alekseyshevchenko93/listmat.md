@@ -1,3 +1,5 @@
+import MainPageController from './components/main-page/controllers/main-page.controller';
+import ProductsListController from './components/products-list/controllers/products-list.controller';
 
 const routes = [
   {
@@ -7,7 +9,9 @@ const routes = [
   {
     name: 'app.main',
     url: '/',
-    templateUrl: 'components/main-page/templates/main.html'
+    templateUrl: 'components/main-page/templates/main.html',
+    controller: MainPageController,
+    controllerAs: 'vm'
   },
   {
     name: 'app.catalog',
@@ -17,7 +21,9 @@ const routes = [
   {
     name: 'app.productsList',
     url: '/catalog/{category}/products',
-    templateUrl: 'components/products-list/templates/products-list.html'
+    templateUrl: 'components/products-list/templates/products-list.html',
+    controller: ProductsListController,
+    controllerAs: 'vm'
   },
   {
     name: 'app.product',

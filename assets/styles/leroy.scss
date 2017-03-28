@@ -1802,7 +1802,8 @@ label {
   line-height: 38px;
   border: solid 1px #cccccc;
   background: white;
-  padding: 0 15px;
+  padding: 0 13px;
+  font-size: 14px;
   cursor: pointer; }
   .select-current:after {
     font-family: 'icomoon' !important;
@@ -1825,7 +1826,6 @@ label {
 
 .select-options {
   position: absolute;
-  display: none;
   z-index: 100;
   left: -1px;
   right: -1px;
@@ -1840,8 +1840,9 @@ label {
     cursor: pointer;
     height: 39px;
     line-height: 38px;
+    font-size: 14px;
     border-bottom: solid 1px #cccccc;
-    padding: 0 15px; }
+    padding: 0 13px; }
     .select-options li:last-child {
       border-bottom: none; }
 

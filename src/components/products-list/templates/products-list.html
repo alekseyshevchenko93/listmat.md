@@ -10,38 +10,37 @@
   <div class="products-sorting-line">
       <div class="row">
         <div class="two-third">
-          <div class="dropdown-select">
-            <div class="select-current ng-binding" data-ng-bind="model.list.sort.name">
+          <div class="dropdown-select" ng-click="vm.showSortDropdown = !vm.showSortDropdown">
+            <div class="select-current">
               Рекомендуем
             </div>
-            <ul class="select-options" style="display: none;">
-              <!-- ngRepeat: sortItem in model.sort track by $index -->
-              <li class="ng-binding ng-scope" data-ng-bind="sortItem.name" data-ng-click="setSort(sortItem)" data-ng-repeat="sortItem in model.sort track by $index">Рекомендуем</li><!-- end ngRepeat: sortItem in model.sort track by $index -->
-              <li class="ng-binding ng-scope" data-ng-bind="sortItem.name" data-ng-click="setSort(sortItem)" data-ng-repeat="sortItem in model.sort track by $index">Цена по возрастанию</li><!-- end ngRepeat: sortItem in model.sort track by $index -->
-              <li class="ng-binding ng-scope" data-ng-bind="sortItem.name" data-ng-click="setSort(sortItem)" data-ng-repeat="sortItem in model.sort track by $index">Цена по убыванию</li><!-- end ngRepeat: sortItem in model.sort track by $index -->
-              <li class="ng-binding ng-scope" data-ng-bind="sortItem.name" data-ng-click="setSort(sortItem)" data-ng-repeat="sortItem in model.sort track by $index">Название по возрастанию</li><!-- end ngRepeat: sortItem in model.sort track by $index -->
-              <li class="ng-binding ng-scope" data-ng-bind="sortItem.name" data-ng-click="setSort(sortItem)" data-ng-repeat="sortItem in model.sort track by $index">Название по убыванию</li><!-- end ngRepeat: sortItem in model.sort track by $index -->
+            <ul class="select-options" ng-show="vm.showSortDropdown">
+              <li>Цена по возрастанию</li>
+              <li>Цена по убыванию</li>
+              <li>Название по возрастанию</li>
+              <li>Цена по убыванию</li>
+
             </ul>
           </div>
         </div>
         <div class="one-sixth">
-          <div class="active" data-ng-class="model.list.view!='tiled'?'active':''" data-ng-click="setView(null)" id="view-list">
+          <div id="view-list" ng-class="{active: vm.view === 'row'}" ng-click="vm.view = 'row'">
             <span></span>
           </div>
         </div>
         <div class="one-sixth">
-          <div class="" data-ng-class="model.list.view=='tiled'?'active':''" data-ng-click="model.list.view=setView('tiled')" id="view-tile">
-            <span></span> <span></span>
+          <div id="view-tile" ng-class="{active: vm.view === 'grid'}" ng-click="vm.view = 'grid'">
+            <span></span><span></span>
           </div>
         </div>
       </div>
     </div>
 
-  <div class="products-container">
-    <div ng-include src="'components/products-list/templates/product-one-row.html'"></div>
-    <div ng-include src="'components/products-list/templates/product-one-row.html'"></div>
-    <div ng-include src="'components/products-list/templates/product-one-row.html'"></div>
-    <div ng-include src="'components/products-list/templates/product-one-row.html'"></div>
+  <div class="products-container" ng-class="{tiled: vm.view === 'grid'}">
+    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
+    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
+    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
+    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
   </div>
 
 </div>
