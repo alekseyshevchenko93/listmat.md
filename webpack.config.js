@@ -67,7 +67,8 @@ var config = {
   plugins: [
     new Webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     }),
     new Webpack.HotModuleReplacementPlugin()
   ],

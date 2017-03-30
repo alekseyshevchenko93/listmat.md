@@ -1,22 +1,23 @@
+import $ from 'jquery';
+window.$ = window.jQuery = $;
+import 'owl-carousel-2/owl.carousel';
+
 import angular from 'angular';
+import 'angular-owl-carousel2';
+
 import uirouter from 'angular-ui-router';
 import angularIncludeReplace from 'angular-include-replace';
-import 'jquery';
-import angularSlick from 'angular-slick';
-import 'slick-carousel/slick/slick';
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'owl-carousel-2/assets/owl.carousel.min.css';
+import 'owl-carousel-2/assets/owl.theme.default.min.css';
 import 'ionicons/dist/scss/ionicons.scss';
 import "reset-css/_reset.scss";
-import 'angular-slick/app/styles/main.css'
-
 import '../assets/styles/app.scss';
 
 const app = angular.module('app', [
   'ui.router',
   'angular-include-replace',
-  'slick'
+  'angular-owl-carousel-2'
 ]);
 
 app.run(['$templateCache', function($templateCache) {

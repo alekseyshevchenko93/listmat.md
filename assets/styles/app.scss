@@ -12,3 +12,15 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.owl-dot {
+  background: transparent !important;
+}
+.owl-dot span {
+  border: solid 2px #66c05d;
+  background: transparent !important;
+}
+
+.owl-dot.active span {
+  background: #66c05d !important;
+}

@@ -1,6 +1,14 @@
 
-<div class="container">
-  <img src="http://teplitsa-plus.ru/images/stories/tsvetnoj-polikarbonat.jpg" style="width: 100%; height: 380px; display: block">
+<!-- <div class="container">
+  <img src="http://teplitsa-plus.ru/images/stories/tsvetnoj-polikarbonat.jpg" style="width: 100%; height: 340px; display: block">
+</div> -->
+
+<div class="container" style="margin-top: 15px">
+  <ng-owl-carousel class="owl-theme" owl-items="vm.sliderItems" owl-properties="vm.sliderProperties" style="margin-top: 15px">
+    <div ng-repeat="item in vm.sliderItems">
+      <img src="{{item}}" style="height: 340px; display: block;">
+    </div>
+  </ng-owl-carousel>
 </div>
 
 <div class="container">
@@ -23,15 +31,6 @@
       </li>
     </ul>
   </nav>
-
-  <slick infinite="true" slides-to-show="3" slides-to-scroll="3">
-    <li>blya</li>
-    <li>blya</li>
-    <li>blya</li>
-    <li>blya</li>
-    <li>blya</li>
-
-  </slick>
 
   <div class="fp-social">
     <a class="fb" href="https://www.facebook.com/LeroyMerlinRussia?fref=ts" target="_blank">Facebook</a>
