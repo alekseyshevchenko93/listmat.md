@@ -13,15 +13,8 @@ export default function MainPageController() {
 
   self.sliderProperties = {
     items: 1,
-    dots: true,
-    // dotsEach: true
+    dots: true
   }
 
-  // $('.main-page-slider').slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3
-  // });
-  //
-  console.log('hi from main page')
+  console.log('hi from main page');
 }

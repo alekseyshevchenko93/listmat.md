@@ -1,46 +1,67 @@
 
 <div class="container">
   <div class="breadcrumb">
-    <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
-      <li><a href="/"><i class="home"></i>Главная</a></li>
-      <li><a href="/catalogue/">Каталог</a></li>
+    <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li>
+        <a href="/"><i class="home"></i>Главная</a>
+      </li>
+      <li>
+        <a href="/catalogue/">Каталог</a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="/catalogue/stroymaterialy/" itemprop="item" target=""><span itemprop="name">Стройматериалы</span>
+        <meta content="1" itemprop="position"></a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="/catalogue/stroymaterialy/suhie_smesi_shtukaturki/" itemprop="item" target=""><span itemprop="name">Сухие смеси, грунтовки</span>
+        <meta content="2" itemprop="position"></a>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="/catalogue/stroymaterialy/suhie_smesi_shtukaturki/shtukaturnye_suhie_smesi/" itemprop="item" target=""><span itemprop="name">Штукатурки</span>
+        <meta content="3" itemprop="position"></a>
+      </li>
     </ul>
   </div>
 
-  <div class="products-sorting-line">
-      <div class="row">
-        <div class="two-third">
-          <div class="dropdown-select" ng-click="vm.showSortDropdown = !vm.showSortDropdown">
-            <div class="select-current">
-              Рекомендуем
+  <div class="productslist-to">
+    <div class="container">
+      <h1>Штукатурки</h1>
+      <div class="products-sorting-line">
+        <div class="row">
+          <div class="two-third">
+            <div class="dropdown-select" ng-click="vm.showSortDropdown = !vm.showSortDropdown">
+              <div class="select-current">
+                Рекомендуем
+              </div>
+              <ul class="select-options" ng-show="vm.showSortDropdown">
+                <li>Цена по возрастанию</li>
+                <li>Цена по убыванию</li>
+                <li>Название по возрастанию</li>
+                <li>Цена по убыванию</li>
+              </ul>
             </div>
-            <ul class="select-options" ng-show="vm.showSortDropdown">
-              <li>Цена по возрастанию</li>
-              <li>Цена по убыванию</li>
-              <li>Название по возрастанию</li>
-              <li>Цена по убыванию</li>
-
-            </ul>
           </div>
-        </div>
-        <div class="one-sixth">
-          <div id="view-list" ng-class="{active: vm.view === 'row'}" ng-click="vm.view = 'row'">
-            <span></span>
+          <div class="one-sixth">
+            <div id="view-list" ng-class="{active: vm.view === 'row'}" ng-click="vm.view = 'row'">
+              <span></span>
+            </div>
           </div>
-        </div>
-        <div class="one-sixth">
-          <div id="view-tile" ng-class="{active: vm.view === 'grid'}" ng-click="vm.view = 'grid'">
-            <span></span><span></span>
+          <div class="one-sixth">
+            <div id="view-tile" ng-class="{active: vm.view === 'grid'}" ng-click="vm.view = 'grid'">
+              <span></span><span></span>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
+  </div>
 
   <div class="products-container" ng-class="{tiled: vm.view === 'grid'}">
-    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
-    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
-    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
-    <div ng-include ng-include-replace src="'components/products-list/templates/product-one-row.html'"></div>
+    <div ng-include ng-include-replace src="'components/products-list/templates/products-list-item.html'"></div>
+    <div ng-include ng-include-replace src="'components/products-list/templates/products-list-item.html'"></div>
+    <div ng-include ng-include-replace src="'components/products-list/templates/products-list-item.html'"></div>
+    <div ng-include ng-include-replace src="'components/products-list/templates/products-list-item.html'"></div>
   </div>
 
 </div>

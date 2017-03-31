@@ -1,12 +1,12 @@
+import angular from 'angular';
+
 import $ from 'jquery';
-window.$ = window.jQuery = $;
 import 'owl-carousel-2/owl.carousel';
 
-import angular from 'angular';
 import 'angular-owl-carousel2';
-
-import uirouter from 'angular-ui-router';
-import angularIncludeReplace from 'angular-include-replace';
+import 'angular-ui-router';
+import 'angular-ui-bootstrap';
+import 'angular-include-replace';
 
 import 'owl-carousel-2/assets/owl.carousel.min.css';
 import 'owl-carousel-2/assets/owl.theme.default.min.css';
@@ -16,6 +16,7 @@ import '../assets/styles/app.scss';
 
 const app = angular.module('app', [
   'ui.router',
+  'ui.bootstrap',
   'angular-include-replace',
   'angular-owl-carousel-2'
 ]);

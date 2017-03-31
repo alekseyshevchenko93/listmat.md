@@ -128,7 +128,7 @@ body {
 h1 {
   font-weight: bold;
   font-size: 18px;
-  margin: 0 0 15px 0; }
+  margin: 0 0 20px 0; }
   h1.nomargin {
     margin: 0 !important; }
 
@@ -457,11 +457,10 @@ img {
 .accordion-menu {
   list-style: none; }
   .accordion-menu > li {
-    color: #666666;
     background: white;
     border-bottom: solid 2px #f1f1f1; }
     .accordion-menu > li a, .accordion-menu > li span {
-      padding: 10px 15px;
+      padding: 13px 15px;
       cursor: pointer; }
     .accordion-menu > li.total-purchase {
       background: #cccccc;
@@ -514,7 +513,8 @@ img {
       position: relative;
       border: none; }
       .accordion-menu > li li a, .accordion-menu > li li span {
-        padding: 10px 40px 10px 50px;
+        padding: 13px 40px 10px 50px;
+        font-size: 16px;
         cursor: pointer; }
       .accordion-menu > li li span .open-close {
         width: 10px;
@@ -535,10 +535,8 @@ img {
       .accordion-menu > li li ul {
         background: white;
         border-left: solid 3px #66c05d;
-        color: #66c05d;
         margin-left: 16px; }
-      .accordion-menu > li li li {
-        color: #66c05d; }
+      .accordion-menu > li li li {}
         .accordion-menu > li li li:after {
           background: -webkit-linear-gradient(left, transparent 25%, #f1f1f1 25%);
           background: linear-gradient(to right, transparent 25%, #f1f1f1 25%);
@@ -567,7 +565,8 @@ img {
 #page-content {
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   position: relative;
-  background: #f1f1f1; }
+  background: #f1f1f1;
+}
   .new-year #page-content {
     background: #f1f1f1 h;
     background-size: 53px auto; }
@@ -597,6 +596,7 @@ img {
     list-style: none; }
   .breadcrumb li {
     display: inline;
+    font-size: 14px;
     color: #66c05d; }
     .breadcrumb li:after {
       display: inline-block;
@@ -1080,6 +1080,7 @@ img {
     display: block;
     padding: 13px 10px;
     color: #333333;
+    font-size: 14px;
     background: white;
     text-decoration: none;
     position: relative;
@@ -1228,6 +1229,7 @@ img {
     border: solid 1px #cccccc; }
   .catalog-menu > li > a, .catalog-menu > li > span {
     padding-left: 49px;
+    font-size: 16px;
     padding-right: 80px; }
     .catalog-menu > li > a .menu-number, .catalog-menu > li > span .menu-number {
       right: 43px; }
@@ -1915,7 +1917,7 @@ label {
   display: block;
   background: white;
   margin-bottom: 4px;
-  padding: 15px 10px 6px 10px;
+  padding: 10px;
   position: relative;
   text-decoration: none;
   color: inherit;
@@ -1937,6 +1939,8 @@ label {
 
 .pl-name {
   margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
   color: #333333; }
   .pl-name a {
     color: inherit;
@@ -2436,7 +2440,7 @@ _:-ms-fullscreen, :root .tiled {
   font-weight: normal; }
 
 .product-carousel img {
-  max-height: 190px; }
+  max-height: 220px; }
 
 .product-carousel .owl-dots {
   padding-top: 12px;
@@ -6440,9 +6444,9 @@ footer {
 
 .subscribe-small-wrapper .subscribe-small-title
 {
-    margin: 0 0 10px;
+  margin: 20px 0 10px;
   font-size: 15px;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .subscribe-small-wrapper .subscribeSmall-form input[name="email"]
