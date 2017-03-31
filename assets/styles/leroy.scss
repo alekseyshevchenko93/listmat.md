@@ -119,8 +119,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
-  background: white; }
+  position: relative;}
 
 .container {
   padding: 0 6px; }
@@ -565,7 +564,7 @@ img {
 #page-content {
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   position: relative;
-  background: #f1f1f1;
+  // background: #f1f1f1;
 }
   .new-year #page-content {
     background: #f1f1f1 h;
