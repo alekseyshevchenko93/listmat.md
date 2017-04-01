@@ -1,64 +1,84 @@
-<div class="container" style="margin-top: 15px">
-  <ng-owl-carousel class="owl-theme" owl-items="vm.sliderItems" owl-properties="vm.sliderProperties" style="margin-top: 15px">
-    <div ng-repeat="item in vm.sliderItems">
-      <img src="{{item}}" style="height: 340px; display: block;">
-    </div>
-  </ng-owl-carousel>
+<div class="main-carousel-container">
+<ng-owl-carousel class="owl-theme" owl-items="vm.sliderItems" owl-properties="vm.sliderProperties" style="margin-top: 15px">
+  <div ng-repeat="item in vm.sliderItems">
+    <img src="{{item}}" class="main-carousel-item">
+  </div>
+</ng-owl-carousel>  
 </div>
 
+<h2 class="grid-list-title">Каталог продукции</h2>
 <div class="container">
-  <nav class="fp-menu">
-    <ul>
-      <li class="catalog-link" data-portal-link="">
-        <a ui-sref="app.catalog">Каталог товаров</a>
-      </li>
-      <li>
-        <a><i class="loc"></i>Контакты</a>
-      </li>
-      <li>
-        <!-- <a><i class="list"></i>Список покупок</a> -->
-      </li>
-      <li>
-        <a><i class="services"></i>Услуги</a>
-      </li>
-      <li>
-        <a><i class="hands"></i>Производители</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="fp-social">
-    <a class="fb" href="https://www.facebook.com/LeroyMerlinRussia?fref=ts" target="_blank">Facebook</a>
-    <a class="ok" href="http://www.odnoklassniki.ru/leroymerlin" target="_blank">Odnoklassni</a>
-    <a class="vk" href="http://vk.com/leroy_merlin" target="_blank">Vkontakte</a>
-    <a class="yout" href="http://www.youtube.com/user/LeroyMerlinRu?sub_confirmation=1" target="_blank">YouTube</a>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="http://lipsteklo.ru/upload/images/listorgstek_big.JPG">
+      <div class="grid-list-item-desription">
+        <h4>Поликарбонат</h4>
+      </div>
+    </a>
   </div>
-
-  <div class="subscribe-small-wrapper">
-    <div class="ng-scope">
-      <form class="fullwidth-form subscribeSmall-form" id="forms.subscribeSmall">
-        <div class="subscribe-small-title">
-          Подпишитесь на рассылку
-        </div>
-        <div class="row">
-          <div class="one-half">
-            <div class="fixed-label">
-              <input id="email" name="email" placeholder="Введите Ваш E-mail" required="required" type="email">
-            </div>
-          </div>
-          <div class="one-half">
-            <button class="btn btn-high fullwidth-btn gray-btn" type="submit"><img class="subscribe-icon" src="/images/letter.png">Подписаться</button>
-          </div>
-        </div>
-      </form>
-    </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="http://adv24.ru/uploadObj/Catalogue-291//acryl2.jpg">
+      <div class="grid-list-item-desription">
+        <h4>Акриловые стёкла</h4>
+      </div>
+    </a>
   </div>
-  <div class="row">
-    <div class="one-half">
-      <a class="btn btn-high fullwidth-btn green-btn" href="/company-menu/">О компании</a>
-    </div>
-    <div class="one-half">
-      <a class="btn btn-high fullwidth-btn green-btn" href="/contact-menu/">Контакты</a>
-    </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="http://promresursy.com/images/plastik-zerkalnij_0.jpg">
+      <div class="grid-list-item-desription">
+        <h4>Монолитный поликарбонат</h4>
+      </div>
+    </a>
+  </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="http://rolaks.com/images/cms/data/sotovii_polikarbonat/assortiment.jpg">
+      <div class="grid-list-item-desription">
+        <h4>Сотовый поликарбонат</h4>
+      </div>
+    </a>  
+  </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="http://st42.stblizko.ru/images/product/129/337/656_big.jpg">
+      <div class="grid-list-item-desription">
+        <h4>ПВХ Пластик</h4>
+      </div>
+    </a>  
+  </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="https://tskufo.ru/upload/shop_1/5/9/4/group_594/small_shop_group_image594.jpg">
+      <div class="grid-list-item-desription">
+        <h4>Материалы для печати</h4>
+      </div>
+    </a>  
+  </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="http://impremium.ru/upload/iblock/52b/52b5000993032f673a4963af257db024.jpg">
+      <div class="grid-list-item-desription">
+        <h4>LED Светотехника</h4>
+      </div>
+    </a>  
+  </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="http://list13.ru/wp-content/uploads/2013/11/al-kompozit-1.jpg">
+      <div class="grid-list-item-desription">
+        <h4>Композитные панели</h4>
+      </div>
+    </a>  
+  </div>
+  <div class="grid-list-item">
+    <a href="#" class="grid-list-item-inner">
+      <img src="https://tskufo.ru/upload/shop_1/5/9/4/group_594/small_shop_group_image594.jpg">
+      <div class="grid-list-item-desription">
+        <h4>Ещё что то</h4>
+      </div>
+    </a>  
   </div>
 </div>
+

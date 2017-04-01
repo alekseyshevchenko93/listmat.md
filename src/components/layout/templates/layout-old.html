@@ -1,0 +1,36 @@
+<div id="page-container">
+  <div id="page-content">
+    <header>
+      <div class="header-line">
+        <div class="container">
+          <div class="header-item" id="toggle-menu"></div>
+          <div class="header-item" id="location"></div>
+          <div class="header-item logo">
+            <a href="/"><img src="/images/listmat-logo.jpg"></a>
+          </div>
+          <div class="header-item" id="profile"></div>
+          <a href="/basket/">
+            <div class="header-item" id="cart"></div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container search-container">
+      <div class="search-line">
+        <form class="search-form" id="searchForm" name="searchForm">
+          <div class="search-input">
+            <input placeholder="Поиск" type="text">
+          </div>
+          <div class="search-button">
+            <button type="submit"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div ui-view></div>
+  
+  </div>
+</div>
+
