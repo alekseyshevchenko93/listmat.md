@@ -22,10 +22,7 @@ export default function ProductsListController() {
    */
   self.showSortDropdown = false;
 
-  self.products = [
-    {
-
-    }
-  ]
+  self.pText = 'SoAcryl это — оргстекло, полученное методом литья. Для этого перемешанную смесь полимера заливают в форму из силикатного стекла, имеющего очень высокую степень полировки поверхности. Полимеризация ведется, как правило, в воздушной среде, реже в водной.';
+  
   console.log('hi from products list controller');
 }

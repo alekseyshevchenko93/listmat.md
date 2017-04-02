@@ -1,0 +1,25 @@
+.breadcrumbs {
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  background: #378ed6;
+  padding: 10px;
+  @include susy-breakpoint($bp-medium) {
+    padding: 10px 0;
+  }
+  @include susy-clearfix();
+  li {
+    float: left;
+    margin-right: 7px;
+    a {
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #fff;
+    } 
+    i.breadcrumb-icon {
+      font-size: 20px;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+  }
+}

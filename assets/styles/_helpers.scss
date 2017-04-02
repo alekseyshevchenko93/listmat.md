@@ -1,0 +1,14 @@
+.container {
+  @include container(100%); 
+  @include susy-breakpoint($bp-medium) {
+    @include container(760px);    
+  } 
+  @include susy-breakpoint($bp-large) {
+    @include container(960px);    
+  }
+
+}
+
+.clearfix {
+  @include susy-clearfix();
+}

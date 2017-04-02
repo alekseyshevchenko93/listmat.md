@@ -5,39 +5,35 @@ import ProductController from './components/product/controllers/product.controll
 const routes = [
   {
     name: 'app',
-    templateUrl: 'components/layout/templates/layout.html'
+    templateUrl: 'components/layout/templates/layout.template.html'
   },
   {
     name: 'app.main',
     url: '/',
-    templateUrl: 'components/main-page/templates/main.html',
+    templateUrl: 'components/main-page/templates/main.template.html',
     controller: MainPageController,
     controllerAs: 'vm'
   },
   {
-    name: 'app.catalog',
-    url: '/catalog',
-    templateUrl: 'components/catalog/templates/catalog.html'
-  },
-  {
     name: 'app.productsList',
     url: '/catalog/{category}/products',
-    templateUrl: 'components/products-list/templates/products-list.html',
+    // templateUrl: 'components/products-list/templates/products-list-old.html',
+    templateUrl: 'components/products-list/templates/products-list.template.html',
     controller: ProductsListController,
     controllerAs: 'vm'
   },
   {
     name: 'app.product',
     url: '/catalog/{category}/products/{product}',
-    templateUrl: 'components/product/templates/product.html',
+    templateUrl: 'components/product/templates/product.template.html',
     controller: ProductController,
     controllerAs: 'vm'
-  },
-  {
-    name: 'app.contacts',
-    url: '/contacts',
-    templateUrl: 'components/contacts/templates/contacts.html'
   }
+  // {
+  //   name: 'app.contacts',
+  //   url: '/contacts',
+  //   templateUrl: 'components/contacts/templates/contacts.html'
+  // }
 ];
 
 routing.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];

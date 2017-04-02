@@ -19,7 +19,7 @@ header {
       float: left;
       margin-top: 3px;
       .header-title-green {
-        color: #19c449;
+        color: #1abc9c;
       }
       .header-title-blue {
         color: #378ed6;
@@ -28,6 +28,7 @@ header {
   }
   h4 {
     font-size: 20px;
+    line-height: 24px;
     margin-top: 15px;
     font-weight: 700;
     font-family: "Roboto";
@@ -39,7 +40,6 @@ header {
     display: table;
     margin: 15px auto 0 auto;
     .contacts-column {
-      // float: left;
       @include susy-breakpoint($bp-medium) {
         float: left;
       }

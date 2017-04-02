@@ -7,14 +7,15 @@ import 'angular-owl-carousel2';
 import 'angular-ui-router';
 import 'angular-ui-bootstrap';
 import 'angular-include-replace';
+import 'angular-ellipsis';
 // import 'angular-animate';
 // import 'angular-aria';
 // import 'angular-material';
 
 import 'owl-carousel-2/assets/owl.carousel.min.css';
 import 'owl-carousel-2/assets/owl.theme.default.min.css';
-import 'ionicons/dist/scss/ionicons.scss';
-// import 'angular-material/angular-material.min.css';
+import 'ionicons/dist/css/ionicons.min.css';
+import 'angular-material/angular-material.min.css';
 import "reset-css/_reset.scss";
 import "susy";
 import '../assets/styles/app.scss';
@@ -24,9 +25,12 @@ const app = angular.module('app', [
   'ui.bootstrap',
   'angular-include-replace',
   'angular-owl-carousel-2',
+  'dibari.angular-ellipsis'
   // 'ngMaterial'
 ]);
-
+/**
+ * Register all tempates
+ */
 app.run(['$templateCache', function($templateCache) {
   let context = require.context('./', true, /\.(html)$/);
 
@@ -35,7 +39,31 @@ app.run(['$templateCache', function($templateCache) {
   });
 
 }]);
+/**
+ * Register all controllers and services
+ */
+// app.run(['$templateCache', function() {
+//   let context = require.context('./', true, /(service|controller|template)\.(js|html)$/);
+
+//   context.keys().forEach(filename => {
+//     let type = filename.match(/\.(service|controller|template)\.(js|html)$/)[1],
+//         value = context(filename);
+
+//     switch(type) {
+//       case 'controller':
+//         app.controller(value);
+//         break;
+//       case 'template':
+//         $templateCache.put(filename.replace('./', ''), value);
+//         break;
+//       case 'service':
+//         app.factory(value);
+//         break;
+//     }
+//   }); 
+// })
 
 import routes from './routes';
+// import './components/products-list/services/products.service';
 
 app.config(routes);
