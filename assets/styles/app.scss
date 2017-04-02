@@ -11,9 +11,10 @@ $bp-large: 1100px;
 
 @import "_breadcrumbs";
 @import "_plugins";
-@import "_header";
+@import "layout";
 @import "_main-page";
 @import "_products-list";
+@import "_product";
 @import "_helpers";
 // @import "leroy.scss";
 
@@ -24,4 +25,8 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
