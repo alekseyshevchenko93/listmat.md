@@ -16,6 +16,7 @@
     }
     .products-list-item-description {
       width: 100%;
+      padding-left: 0;
       @include susy-breakpoint($bp-medium) {
         width: calc(100% - 180px);
       }
@@ -29,15 +30,6 @@
           margin-top: 0;
           text-align: justify;
         }
-      }
-      span.products-list-item-price {
-        text-align: center;
-        float: none;
-        width: 100%;
-        @include susy-breakpoint($bp-medium) {
-          float: left;
-          width: auto;
-        }   
       }
       p {
         height: auto;

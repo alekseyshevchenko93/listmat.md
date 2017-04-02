@@ -13,7 +13,8 @@ export default function MainPageController() {
 
   self.sliderProperties = {
     items: 1,
-    dots: true
+    dots: true,
+    infinite: true
   }
 
   console.log('hi from main page');

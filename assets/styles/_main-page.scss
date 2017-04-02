@@ -1,6 +1,6 @@
 .main-carousel-container {
   .main-carousel-item {
-    height: 340px;
+    height: 260px;
     @include susy-breakpoint($bp-medium) {
       height: 420px;
     }

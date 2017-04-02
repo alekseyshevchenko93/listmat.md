@@ -67,3 +67,4 @@ import routes from './routes';
 // import './components/products-list/services/products.service';
 
 app.config(routes);
+
