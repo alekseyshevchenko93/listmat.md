@@ -16,6 +16,12 @@
     }
     .products-list-item-description {
       width: 100%;
+      @include susy-breakpoint($bp-medium) {
+        width: calc(100% - 180px);
+      }
+      @include susy-breakpoint($bp-large) {
+        width: calc(100% - 240px);
+      }
       a.products-list-item-title {
         margin-top: 30px;
         text-align: center;
@@ -24,11 +30,14 @@
           text-align: justify;
         }
       }
-      @include susy-breakpoint($bp-medium) {
-        width: calc(100% - 180px);
-      }
-      @include susy-breakpoint($bp-large) {
-        width: calc(100% - 240px);
+      span.products-list-item-price {
+        text-align: center;
+        float: none;
+        width: 100%;
+        @include susy-breakpoint($bp-medium) {
+          float: left;
+          width: auto;
+        }   
       }
       p {
         height: auto;
