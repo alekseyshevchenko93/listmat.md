@@ -14,7 +14,7 @@ export default function MainPageController() {
   self.sliderProperties = {
     items: 1,
     dots: true,
-    infinite: true
+    loop: true
   }
 
   console.log('hi from main page');
