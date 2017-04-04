@@ -15,7 +15,7 @@
   box-sizing: border-box;
   background: #fff;
   @include susy-breakpoint($bp-large) {
-    // @include gallery(6 of 12);    
+    // @include gallery(6 of 12);
   }
   margin-bottom: gutter();
   box-shadow:: 1px 1px 2px 1px rgba(0,0,0,.1);
@@ -23,23 +23,22 @@
   .products-list-item-image {
     display: block;
     @include susy-breakpoint($bp-medium) {
-      float: left;       
+      float: left;
     }
     img {
       display: block;
       width: 100px;
       margin: 25px auto;
       @include susy-breakpoint($bp-medium) {
-        
         margin: 0;
       }
     }
   }
   a.products-list-item-title {
     @include susy-breakpoint($bp-medium) {
-      width: calc(100% - 100px);      
-      padding-left: 15px;
+      width: calc(100% - 100px);
       float: right;
+      padding-left: 15px;
       text-align: justify;
     }
     box-sizing: border-box;
@@ -56,12 +55,13 @@
     box-sizing: border-box;
     @include susy-breakpoint($bp-medium) {
       width: calc(100% - 100px);
-      float: right;
+      float: left;
       padding-left: 15px;
     }
     p {
       margin: 15px 0 10px 0;
       font-size: 14px;
+      float: left;
       line-height: 18px;
       height: 70px;
       overflow: hidden;
@@ -94,4 +94,3 @@
     }
   }
 }
-

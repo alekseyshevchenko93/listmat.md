@@ -76,6 +76,7 @@ var config = {
   devServer: {
     contentBase: './public',
     hot: true,
+    port: 8081,
     historyApiFallback: true
   }
 

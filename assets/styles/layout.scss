@@ -38,7 +38,7 @@ header {
   }
   .contacts-section {
     display: table;
-    margin: 15px auto 0 auto;
+    margin: 10px auto 0 auto;
     .contacts-column {
       @include susy-breakpoint($bp-medium) {
         float: left;

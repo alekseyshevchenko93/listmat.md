@@ -12,7 +12,7 @@ export default function ProductController() {
   self.sliderProperties = {
     items: 1,
     dots: true
-  }
+  };
 
   console.log('hi from product controller');
 }
