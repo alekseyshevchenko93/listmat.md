@@ -21,5 +21,7 @@ export default function MainPageController() {
     autoplayTimeout: 3000
   }
 
+  self.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+  
   console.log('hi from main page');
 }

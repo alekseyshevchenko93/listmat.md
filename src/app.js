@@ -2,12 +2,13 @@ import angular from 'angular';
 
 import $ from 'jquery';
 import 'owl-carousel-2/owl.carousel';
-
+import _ from 'lodash';
 import 'angular-owl-carousel2';
 import 'angular-ui-router';
 import 'angular-ui-bootstrap';
 import 'angular-include-replace';
 import 'angular-ellipsis';
+// import 'angular-google-maps';
 // import 'angular-animate';
 // import 'angular-aria';
 // import 'angular-material';
@@ -25,9 +26,16 @@ const app = angular.module('app', [
   'ui.bootstrap',
   'angular-include-replace',
   'angular-owl-carousel-2',
-  'dibari.angular-ellipsis'
+  'dibari.angular-ellipsis',
+  // 'uiGmapgoogle-maps'
   // 'ngMaterial'
 ]);
+
+// app.config(['uiGmapGoogleMapApiProvider', function(GoogleMapApiProviders) {
+//   GoogleMapApiProviders.configure({
+//     china: true
+//   });
+// }]);
 /**
  * Register all tempates
  */
