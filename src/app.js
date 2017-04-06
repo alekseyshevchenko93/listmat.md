@@ -8,14 +8,14 @@ import 'angular-ui-router';
 import 'angular-ui-bootstrap';
 import 'angular-include-replace';
 import 'angular-ellipsis';
-// import 'angular-google-maps';
+import 'angular-simple-logger';
+import 'angular-google-maps';
 // import 'angular-animate';
 // import 'angular-aria';
 // import 'angular-material';
 
 import 'owl-carousel-2/assets/owl.carousel.min.css';
 import 'owl-carousel-2/assets/owl.theme.default.min.css';
-import 'ionicons/dist/css/ionicons.min.css';
 import 'angular-material/angular-material.min.css';
 import "reset-css/_reset.scss";
 import "susy";
@@ -27,13 +27,16 @@ const app = angular.module('app', [
   'angular-include-replace',
   'angular-owl-carousel-2',
   'dibari.angular-ellipsis',
-  // 'uiGmapgoogle-maps'
+  'nemLogging',
+  'uiGmapgoogle-maps'
   // 'ngMaterial'
 ]);
 
-// app.config(['uiGmapGoogleMapApiProvider', function(GoogleMapApiProviders) {
-//   GoogleMapApiProviders.configure({
-//     china: true
+// app.config(['uiGmapGoogleMapApiProvider', function(uiGmapGoogleMapApiProvider) {
+//   uiGmapGoogleMapApiProvider.configure({
+//     key: 'AIzaSyAan6p57BKo97B7b6rtwb3Tvr1i9NwrH5g',
+//     v: '3.20', //defaults to latest 3.X anyhow
+//     libraries: 'weather,geometry,visualization'
 //   });
 // }]);
 /**

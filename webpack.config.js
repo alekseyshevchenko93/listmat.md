@@ -68,7 +68,8 @@ var config = {
     new Webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+      'window.jQuery': 'jquery',
+      _: 'lodash'
     }),
     new Webpack.HotModuleReplacementPlugin()
   ],
@@ -76,7 +77,7 @@ var config = {
   devServer: {
     contentBase: './public',
     hot: true,
-    port: 8081,
+    port: 8080,
     historyApiFallback: true
   }
 

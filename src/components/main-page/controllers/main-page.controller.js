@@ -1,7 +1,7 @@
 
-MainPageController.$inject = [];
+MainPageController.$inject = ['uiGmapGoogleMapApi'];
 
-export default function MainPageController() {
+export default function MainPageController(uiGmapGoogleMapApi) {
 
   const self = this;
 
@@ -21,7 +21,13 @@ export default function MainPageController() {
     autoplayTimeout: 3000
   }
 
+
   self.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+
+  uiGmapGoogleMapApi.then(maps => {
+    console.log(self.map)
+    console.log('google maps loaded');
+  });
   
   console.log('hi from main page');
 }
