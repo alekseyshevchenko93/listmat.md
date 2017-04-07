@@ -17,6 +17,7 @@ import 'angular-google-maps';
 import 'owl-carousel-2/assets/owl.carousel.min.css';
 import 'owl-carousel-2/assets/owl.theme.default.min.css';
 import 'angular-material/angular-material.min.css';
+import 'ionicons/dist/css/ionicons.min.css';
 import "reset-css/_reset.scss";
 import "susy";
 import '../assets/styles/app.scss';
@@ -71,11 +72,10 @@ app.run(['$templateCache', function($templateCache) {
 //         app.factory(value);
 //         break;
 //     }
-//   }); 
+//   });
 // })
 
 import routes from './routes';
 // import './components/products-list/services/products.service';
 
 app.config(routes);
-
