@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack & http-server -p 80 -c-1 & ./public",
     "start-dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
