@@ -1,7 +1,6 @@
+ProductsListController.$inject = ['DataService', '$state'];
 
-ProductsListController.$inject = [];
-
-export default function ProductsListController() {
+export default function ProductsListController(DataService, $state) {
 
   const self = this;
 
@@ -21,8 +20,16 @@ export default function ProductsListController() {
    * Shows dropdown to change sorting
    */
   self.showSortDropdown = false;
-
-  self.pText = 'SoAcryl это — оргстекло, полученное методом литья. Для этого перемешанную смесь полимера заливают в форму из силикатного стекла, имеющего очень высокую степень полировки поверхности. Полимеризация ведется, как правило, в воздушной среде, реже в водной.';
   
-  console.log('hi from products list controller');
+  console.log('state params', $state.params);
+
+  DataService.getCategoryById($state.params.category).then(response => {
+    console.log('category', response.data);
+    self.category = response.data;
+  });
+
+  DataService.getProductsByCategoryId($state.params.category).then(response => {
+    console.log('products', response.data);
+    self.products = response.data;
+  });
 }

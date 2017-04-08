@@ -1,11 +1,12 @@
-var Webpack = require('webpack');
-var development = process.env.NODE_ENV !== 'production';
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
+const Webpack = require('webpack');
+const development = process.env.NODE_ENV !== 'production';
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-var config = {
-  devtool: development ? 'eval' : null,
+console.log('env', process.env.NODE_ENV);
+
+
+const config = {
+  devtool: development ? 'eval' : false,
 
   entry: './src/app.js',
 
@@ -70,6 +71,10 @@ var config = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       _: 'lodash'
+    }),
+    new Webpack.DefinePlugin({
+      // NODE_ENV: development ? 'development' : 'production'
+      NODE_ENV: JSON.stringify('development')
     }),
     new Webpack.HotModuleReplacementPlugin()
   ],

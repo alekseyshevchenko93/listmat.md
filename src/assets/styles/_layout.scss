@@ -1,0 +1,115 @@
+
+
+header {
+  padding: 15px 0px;
+  background: #fff;
+  .header-logo {
+    display: table;
+    margin: 0 auto;
+    img.logo {
+      height: 30px;
+      display: block;
+      float: left;
+      margin-right: 7px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 900;
+      font-family: "Catamaran";
+      float: left;
+      margin-top: 3px;
+      .header-title-green {
+        color: #1abc9c;
+      }
+      .header-title-blue {
+        color: #378ed6;
+      }
+    }
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 15px;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-align: center;
+    color: #0d1b30;
+  }
+  .contacts-section {
+    display: table;
+    margin: 10px auto 0 auto;
+    .contacts-column {
+      @include susy-breakpoint($bp-medium) {
+        float: left;
+      }
+    }
+    .contact-item {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      display: table;
+      margin: 7px auto;
+      @include susy-breakpoint($bp-medium) {
+        margin-right: 10px;
+        margin-top: 5px;
+        display: block;
+      }
+      @include susy-breakpoint($bp-large) {
+        margin-right: 10px;
+        margin-top: 5px;
+        display: block;
+        float: left;
+      }
+      img {
+        height: 20px;
+        margin-right: 5px;
+        vertical-align: middle;
+        line-height: 20px;
+        display: inline-block;
+      }
+      .contact-item-phone {
+        margin-top: -5px;
+        margin-right: 2px;
+      }
+    }
+  }
+  .header-search-container {
+    padding: 0 15px;
+    box-sizing: border-box;
+    .header-search {
+      width: 100%;
+      margin: 5px auto 0 auto;
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+      @include susy-breakpoint($bp-medium) {
+        width: 440px;
+      }
+      input {
+        width: 100%;
+        height: 28px;
+        display: block;
+        border: 2px solid #378ed6;
+        outline: none;
+        text-indent: 10px;
+        font-size: 14px;
+      // border: 2px solid rgb(180,180,180);
+      }
+      img {
+        position: absolute;
+        right: 0;
+        padding: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 24px;
+        cursor: pointer;
+  }
+    }
+  }
+}
+
+
+footer {
+  margin-top: 100px;
+}

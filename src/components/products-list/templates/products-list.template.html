@@ -5,24 +5,27 @@
       <i class="breadcrumb-icon icon ion-ios-arrow-forward"></i>
     </li>
     <li>
-      <a href="/catalog/1/products">Акриловые стёкла</a>
+      <a href="/catalog/{{ vm.category.id }}/products">{{ vm.category.name }}</a>
     </li>
   </div>
 </ul>
 <div class="products-list-container container">
   <ul class="products-list">
-    <li class="products-list-item">
-      <a href="/catalog/1/products/1" class="products-list-item-title">Литые акриловые стекла «SoAcryl», PRC.</a>
-      <a href="/catalog/1/products/1" class="products-list-item-image">
-        <img src="http://polikarbonat.md/wp-content/uploads/2012/02/akril2-300x199.png">
+    <li class="products-list-item" ng-repeat="item in vm.products">
+      <a class="products-list-item-title">{{ item.name }}</a>
+      <a class="products-list-item-image">
+        <img src="{{ item.image }}">
       </a>
       <div class="products-list-item-description">
-        <p ellipsis ng-bind="vm.pText"></p>
-        <span class="products-list-item-price">Цена: 2560 лей</span>
-        <a href="/catalog/1/products/1" class="products-list-item-btn">Подробнее</a>
+        <p>SoAcryl это — оргстекло, полученное методом литья. Для этого перемешанную смесь полимера заливают в форму из силикатного стекла, имеющего очень высокую степень полировки поверхности. Полимеризация ведется, как правило, в воздушной среде, реже в водной.</p>
+        
+        <span class="products-list-item-price" ng-if="item.price_unit === 'square'">Цена: {{ item.price }} лей / м2</span>
+        <span class="products-list-item-price" ng-if="item.price_unit === 'item'">Цена: {{ item.price }} лей / шт</span>
+
+        <a class="products-list-item-btn">Расчитать цену</a>
       </div>
     </li>
-    <li class="products-list-item">
+<!--     <li class="products-list-item">
       <a href="/catalog/1/products/1" class="products-list-item-title">Экструзионные акриловые стекла «QUINN-PLASTICS», Германия.</a>
       <a href="/catalog/1/products/1" class="products-list-item-image">
         <img src="http://www.poliolefins.ru/uploads/posts/2012-11/1352786045_akrilstek2.jpg">
@@ -43,6 +46,6 @@
         <span class="products-list-item-price">Цена: 3000 лей</span>
         <a href="/catalog/1/products/1" class="products-list-item-btn">Подробнее</a>
       </div>
-    </li>
+    </li> -->
   </ul>
 </div>

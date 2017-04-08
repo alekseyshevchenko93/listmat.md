@@ -16,8 +16,7 @@ const routes = [
   },
   {
     name: 'app.productsList',
-    url: '/catalog/{category}/products',
-    // templateUrl: 'components/products-list/templates/products-list-old.html',
+    url: '/categories/{category}/products',
     templateUrl: 'components/products-list/templates/products-list.template.html',
     controller: ProductsListController,
     controllerAs: 'vm'

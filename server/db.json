@@ -1,0 +1,61 @@
+{
+  "categories": [{
+    "id": 1,
+    "name": "Поликарбонат сотовый",
+    "image": "http://moypolikarbonat.ru/wp-content/uploads/2015/01/kupit-polikarbonat-v-vologde-2.jpg"
+  }, {
+    "id": 2,
+    "name": "Поликарбонат монолитный",
+    "image": "http://billion72.ru/upload/iblock/65b/65b24d23594d15206f187de2db4c86e6.jpg"
+  }, {
+    "id": 3,
+    "name": "Акрил",
+    "image": "http://orgsteklo.net.ua/images/articles/akril%20sheet%201.jpg"
+  }, {
+    "id": 4,
+    "name": "ПВХ Пластик",
+    "image": "http://www.spk19.ru/images/phocagallery/mat-dl-rek/listov/thumbs/phoca_thumb_l_pvc_sandwich_panels.jpg"
+  }, {
+    "id": 5,
+    "name": "Материалы для печати",
+    "image": "http://remexural.ru/system/group_pictures/547add789f19507a4c000538/big_cifrpechat.jpg"
+  }, {
+    "id": 6,
+    "name": "Мобильные выставочные стенды",
+    "image": "http://mediaproject.spb.ru/upload/iblock/b25/b254fd3d35f7fc1691c8cbf32f8ef92c.jpg"
+  }, {
+    "id": 7,
+    "name": "Профиля",
+    "image": "http://aluminum.pl/wp-content/uploads/ceownik-aluminiowy.jpeg"
+  }, {
+    "id": 8,
+    "name": "Тентовая ткань и фурнитура",
+    "image": "http://kozhemir.ru/assets/catalog/brezent-i-tentovaya-tkan/tentovaya-tkan/1358251519_3822315_w640_h640_rulony.jpg"
+  }],
+  
+  "products": [{
+    "category_id": 1,
+    "name": "Поликарбонат сотовый 4'",
+    "image": "http://ug-plast.ru/upload/medialibrary/ea4/ea45795e52cb1b2a6a09bc1943f4eb9a.jpg",
+    "price": 2560,
+    "price_unit": "square"
+  }, {
+    "category_id": 1,
+    "name": "Поликарбонат сотовый 6'",
+    "image": "http://startbusinessidea.ru/wp-content/uploads/2015/02/proizvodstvo-sotovogo-polikarbonata.jpg",
+    "price": 3570,
+    "price_unit": "square"
+  }, {
+    "category_id": 2,
+    "name": "Поликарбонат монолитный 4'",
+    "image": "http://krug06.ru/sites/default/files/products/solid.jpg",
+    "price": 1750,
+    "price_unit": "square"
+  }, {
+    "category_id": 2,
+    "name": "Поликарбонат монолитный 6'",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS50veDiTMkm7uUNg-rRVmSwIgopgWvNqcqTonP8HVrOEjFhYkO",
+    "price": 3200,
+    "price_unit": "square"
+  }]
+}
