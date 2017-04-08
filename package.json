@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "set NODE_ENV=production & webpack -p",
+    "start": "NODE_ENV=production webpack -p & json-server & start:prod",
+    "start:prod": "http-server --port 8080 --cors ./public",
     "start:dev": "set NODE_ENV=development & webpack-dev-server",
     "json-server": "json-server --port 8081 --watch ./server/db.json --routes ./server/routes.json"
   },

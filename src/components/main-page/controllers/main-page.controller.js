@@ -5,7 +5,8 @@ export default function MainPageController(DataService, uiGmapGoogleMapApi) {
   const self = this;
 
   self.sliderItems = [
-    'http://srbu.ru/images/stroitelnye-materialy/monolitnyj-polikarbonat-svojstva-i-primenenie/monolitnyj-polikarbonat-svojstva-i-primenenie.jpg',
+    '/images/banner1.jpg',
+    // 'http://srbu.ru/images/stroitelnye-materialy/monolitnyj-polikarbonat-svojstva-i-primenenie/monolitnyj-polikarbonat-svojstva-i-primenenie.jpg',
     'https://www.krov-systema.ru/upload/test/b1dbf6c465a5ea783e8f5be365f84c6b4.jpg',
     'https://www.krov-systema.ru/upload/test/8e5d49ecca1d21c9fe47a615a24a32dc2.jpg'
   ];

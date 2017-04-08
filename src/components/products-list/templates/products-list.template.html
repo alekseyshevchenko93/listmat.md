@@ -9,6 +9,11 @@
     </li>
   </div>
 </ul>
+
+<div class="container">
+  <a class="material-btn back-btn"><i class="breadcrumb-icon icon ion-ios-arrow-back"></i>Вернуться назад</a>
+</div>
+
 <div class="products-list-container container">
   <ul class="products-list">
     <li class="products-list-item" ng-repeat="item in vm.products">
@@ -18,7 +23,7 @@
       </a>
       <div class="products-list-item-description">
         <p>SoAcryl это — оргстекло, полученное методом литья. Для этого перемешанную смесь полимера заливают в форму из силикатного стекла, имеющего очень высокую степень полировки поверхности. Полимеризация ведется, как правило, в воздушной среде, реже в водной.</p>
-        
+
         <span class="products-list-item-price" ng-if="item.price_unit === 'square'">Цена: {{ item.price }} лей / м2</span>
         <span class="products-list-item-price" ng-if="item.price_unit === 'item'">Цена: {{ item.price }} лей / шт</span>
 
