@@ -1,0 +1,33 @@
+<ul class="breadcrumbs">
+  <div class="container">
+    <li>
+      <a href="/#products">Каталог</a>
+      <i class="breadcrumb-icon icon ion-ios-arrow-forward"></i>
+    </li>
+    <li>
+      <a>Поиск товаров</a>
+    </li>
+  </div>
+</ul>
+
+<h2 class="main-page-title" ng-if="search.products.length">Результаты поиска по запросу - {{ search.searchString }}:</h2>
+<h2 class="main-page-title" ng-if="!search.products.length">Поиск не дал результатов</h2>
+
+<div class="products-list-container container">
+  <ul class="products-list">
+    <li class="products-list-item" ng-repeat="item in search.products">
+      <a class="products-list-item-title">{{ item.name }}</a>
+      <a class="products-list-item-image">
+        <img src="{{ item.image }}">
+      </a>
+      <div class="products-list-item-description">
+        <p>SoAcryl это — оргстекло, полученное методом литья. Для этого перемешанную смесь полимера заливают в форму из силикатного стекла, имеющего очень высокую степень полировки поверхности. Полимеризация ведется, как правило, в воздушной среде, реже в водной.</p>
+
+        <span class="products-list-item-price" ng-if="item.price_unit === 'square'">Цена: {{ item.price }} лей / м2</span>
+        <span class="products-list-item-price" ng-if="item.price_unit === 'item'">Цена: {{ item.price }} лей / шт</span>
+
+        <a class="products-list-item-btn">Расчитать цену</a>
+      </div>
+    </li>
+  </ul>
+</div>

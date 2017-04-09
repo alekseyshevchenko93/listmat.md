@@ -1,7 +1,10 @@
-.main-page-container {
-  padding-top: 25px;
+.main-page-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-
 .main-carousel-container {
   .main-carousel-item {
     height: 260px;
@@ -14,14 +17,6 @@
   }
 }
 
-.grid-list-title {
-  text-align: center;
-  font-size: 20px;
-  margin: 30px 0;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 .grid-list {
   padding: 0 gutter();
   box-sizing: border-box;
@@ -30,20 +25,29 @@
   }
   .grid-list-item {
     position: relative;
-    @include gallery(6 of 12);
+    margin-bottom: gutter();
     height: span(6 of 12);
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 0;
+    }
+    @include gallery(6 of 12);
     @include susy-breakpoint($bp-medium) {
-      @include gallery(4 of 12);      
+      @include gallery(4 of 12);   
+      &:nth-last-of-type(-n+3) {
+        margin-bottom: 0;
+      }   
     }
     @include susy-breakpoint($bp-large) {
-      @include gallery(3 of 12);      
+      @include gallery(3 of 12);  
+      &:nth-last-of-type(-n+4) {
+        margin-bottom: 0;
+      }     
     }
     &:before {
       content: "";
       padding-top: 100%;
       display: block;
     }
-    margin-bottom: gutter();
     .grid-list-item-inner {
       width: 100%;
       height: 100%;
@@ -93,4 +97,16 @@ ul.social-list {
 
 .angular-google-map-container { 
   height: 400px; 
+}
+
+.marker_labels {
+  color: red;
+   background-color: white;
+   font-family: "Lucida Grande", "Arial", sans-serif;
+   font-size: 10px;
+   font-weight: bold;
+   text-align: center;
+   width: 60px;     
+   border: 2px solid black;
+   white-space: nowrap;
 }

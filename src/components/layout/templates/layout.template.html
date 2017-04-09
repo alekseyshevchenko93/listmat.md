@@ -32,10 +32,10 @@
   </div>
   
   <div class="header-search-container">
-    <div class="header-search">
-      <input type="search" placeholder="Поиск">    
-      <img src="/images/header-icon5.png">
-    </div>
+    <form class="header-search" ng-submit="layout.getProductsByFullTextSearch()">
+      <input type="search" placeholder="Поиск" ng-model="layout.searchString">  
+        <img src="/images/header-icon5.png" ng-click="layout.getProductsByFullTextSearch()">        
+    </form>
   </div>
 
 </header>

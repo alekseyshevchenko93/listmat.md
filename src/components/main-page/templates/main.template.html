@@ -1,15 +1,16 @@
 <div class="main-carousel-container">
-<ng-owl-carousel class="owl-theme" owl-items="vm.sliderItems" owl-properties="vm.sliderProperties" style="margin-top: 15px">
-  <div ng-repeat="item in vm.sliderItems">
+<ng-owl-carousel class="owl-theme" owl-items="main.sliderItems" owl-properties="main.sliderProperties" style="margin-top: 15px">
+  <div ng-repeat="item in main.sliderItems">
     <img src="{{item}}" class="main-carousel-item">
   </div>
 </ng-owl-carousel>  
 </div>
 
+<h2 class="main-page-title">Каталог продукции</h2>
+
 <div class="main-page-container" id="products">
-  <h2 class="grid-list-title" style="margin-top: 0">Каталог продукции</h2>
   <ul class="container grid-list">
-    <li class="grid-list-item" ng-repeat="item in vm.categories">
+    <li class="grid-list-item" ng-repeat="item in main.categories">
       <a href="/categories/{{ item.id }}/products" class="grid-list-item-inner">
         <img src="{{ item.image }}">
         <div class="grid-list-item-desription">
@@ -19,9 +20,18 @@
     </li>
   </ul>
 
-  <!-- <h2 class="grid-list-title">Мы в социальных сетях</h2> -->
 
-  <!-- <ul class="social-list">
+  <h2 class="main-page-title">Наши коодинаты</h2>
+  <div>
+    <ui-gmap-google-map center="main.map.center" zoom="main.map.zoom">
+      <ui-gmap-marker coords="main.marker.coords" idkey="main.marker.id" animation="DROP">
+      </ui-gmap-marker>
+    </ui-gmap-google-map>
+  </div>
+
+<!--   <h2 class="main-page-title">Мы в социальных сетях</h2>
+  
+  <ul class="social-list">
     <li>
       <a href="#">
         <img src="/images/Instagram.png">
@@ -43,11 +53,6 @@
       </a>
     </li>
   </ul> -->
-  <h2 class="grid-list-title">Наши координаты</h2>
-
-  <div>
-    <ui-gmap-google-map center="vm.map.center" zoom="map.zoom"></ui-gmap-google-map>
-  </div>
 </div>
 
 <footer></footer>

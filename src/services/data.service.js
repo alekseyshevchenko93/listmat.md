@@ -16,10 +16,15 @@ export default function DataService($http) {
     return $http.get(`/api/categories/${categoryId}/products`);
   }
 
+  const getProductsByFullTextSearch = function(query) {
+    return $http.get(`/api/products?q=${query}`);
+  }
+
   return {
     getCategories,
     getCategoryById,
-    getProductsByCategoryId
+    getProductsByCategoryId,
+    getProductsByFullTextSearch
   }
 };
 

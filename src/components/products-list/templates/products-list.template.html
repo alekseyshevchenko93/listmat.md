@@ -5,7 +5,7 @@
       <i class="breadcrumb-icon icon ion-ios-arrow-forward"></i>
     </li>
     <li>
-      <a href="/catalog/{{ vm.category.id }}/products">{{ vm.category.name }}</a>
+      <a href="/catalog/{{ products.category.id }}/products">{{ products.category.name }}</a>
     </li>
   </div>
 </ul>
@@ -16,7 +16,7 @@
 
 <div class="products-list-container container">
   <ul class="products-list">
-    <li class="products-list-item" ng-repeat="item in vm.products">
+    <li class="products-list-item" ng-repeat="item in products.products">
       <a class="products-list-item-title">{{ item.name }}</a>
       <a class="products-list-item-image">
         <img src="{{ item.image }}">
