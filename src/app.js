@@ -36,7 +36,7 @@ const app = angular.module('app', [
 console.log('ENV', NODE_ENV);
 
 app.constant('ENV', NODE_ENV);
-app.constant('API_URL', NODE_ENV === 'development' ? 'http://localhost:8081' : 'http://production-url.com');
+app.constant('API_URL', 'http://192.168.0.101:8081');
 app.constant('GOOGLE_MAPS_API_KEY', 'AIzaSyAan6p57BKo97B7b6rtwb3Tvr1i9NwrH5g');
 
 app.config(['uiGmapGoogleMapApiProvider', 'GOOGLE_MAPS_API_KEY', function(uiGmapGoogleMapApiProvider, GOOGLE_MAPS_API_KEY) {

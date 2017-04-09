@@ -73,7 +73,6 @@ const config = {
       _: 'lodash'
     }),
     new Webpack.DefinePlugin({
-      // NODE_ENV: development ? 'development' : 'production'
       NODE_ENV: JSON.stringify('development')
     }),
     new Webpack.HotModuleReplacementPlugin()

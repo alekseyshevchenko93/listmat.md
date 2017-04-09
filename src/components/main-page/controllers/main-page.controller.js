@@ -46,8 +46,9 @@ export default function MainPageController(DataService, uiGmapGoogleMapApi) {
   });
 
   DataService.getCategories().then(response => {
+    alert(JSON.stringify(response));
     self.categories = response.data;
-  });
+  }).catch(err => alert(JSON.stringify(err)))
   
   console.log('hi from main page');
 }
